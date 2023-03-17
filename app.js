@@ -17,7 +17,7 @@ async function connectWallet() {
     }
 
     try {
-        const web3 = new Web3(provider);
+        const web3 = new web3(provider);
         const accounts = await web3.eth.getAccounts();
         const account = accounts[0];
 
