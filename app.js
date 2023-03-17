@@ -1,8 +1,11 @@
 const connectWalletBtn = document.getElementById('connectWallet');
 const artGenerator = document.getElementById('artGenerator');
 const accessDenied = document.getElementById('accessDenied');
+const web3 = require('web3');
 
 const collectionAddress = '0xYourCollectionAddressHere'; // Replace with your collection's contract address
+
+import web3 from 'web3';
 
 async function connectWallet() {
     let provider;
